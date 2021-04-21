@@ -1,6 +1,7 @@
 package application;
 
-import boardgame.Position;
+import boardgame.Board;
+
 
 public class Program {
 
@@ -8,8 +9,7 @@ public class Program {
 		// TODO Auto-generated method stub
 
 		
-		Position pos = new Position(3, 5);
-		System.out.println(pos);
+		Board board = new Board(8, 8);
 	}
 
 }
