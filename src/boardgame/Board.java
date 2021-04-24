@@ -1,5 +1,7 @@
 package boardgame;
 
+import com.sun.org.apache.bcel.internal.generic.RETURN;
+
 public class Board {
 
 	
@@ -30,8 +32,12 @@ public class Board {
 		this.columns = columns;
 	}
 	
+	public Piece piece(int row, int column) {
+		return pieces[row][column];
+	}
 	
-	
-	
+	public Piece piece(Position position) {
+		return piece[position.getRow()][position.getColumn()];
+	}
 	
 }
